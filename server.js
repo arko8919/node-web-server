@@ -24,7 +24,8 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-    res.render('maintenance.hbs')
+    res.render('maintenance.hbs');
+    next();
 });
 
 // app.use(express.static(__dirname + '/public')); // middleware tech express how to read from a static directory
