@@ -23,12 +23,11 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
-// app.use(express.static(__dirname + '/public')); // middleware tech express how to read from a static directory
+app.use(express.static(__dirname + '/public')); // middleware tech express how to read from a static directory
 // // app.use --> register middleware ( ) --> provide middleware function
 
 
